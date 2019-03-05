@@ -1,0 +1,1 @@
+python image_translation_infer.py \ --model_path="256/" --image_hw=256 --input_tensor_name="sources_ph" --output_tensor_name="custom_generated_t_style_source:0" --input_image_path="./image/" --output_image_path="./output/"
