@@ -60,11 +60,11 @@ for f in glob.glob(os.path.join(faces_folder_path, "*.jpg")):
         shape = shape_to_np(shape)
         # cv.imshow("some.jpg", img)
         x, y, w, h = rect_to_bb(rect)
-        # cv.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
-        # cv.putText(img, "Face #{}".format(k + 1), (x - 10, y - 10), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
-        # for (x, y) in shape:
-        #     cv.circle(img, (x, y), 1, (0, 0, 255), -1)
-        img = img[y:y+h, x:x+w]
+        cv.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
+        cv.putText(img, "Face #{}".format(k + 1), (x - 10, y - 10), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+        for (x, y) in shape:
+            cv.circle(img, (x, y), 1, (0, 0, 255), -1)
+        # img = img[y:y+h, x:x+w]
         
         print("cropping...")
         # cv.imwrite('input.jpg', img)
