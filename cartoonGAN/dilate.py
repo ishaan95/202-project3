@@ -20,4 +20,4 @@ def fuzzDataFromPath(path, newpath):
       im2 = cv2.bitwise_or(im_foreground, im_background)
       cv2.imwrite(newfpath, im2)
 
-fuzzDataFromPath('dataset/sailor_moon_train256x256', 'dataset/sailor_moon_fuzzy_train256x256')
+fuzzDataFromPath('dataset/spirit_train256x256', 'dataset/spirit_fuzzy_train256x256')

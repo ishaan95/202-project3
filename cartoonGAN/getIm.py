@@ -5,8 +5,8 @@ def parseFramesFromVid(path):
    success,image = vidcap.read()
    count = 0
    while success:
-     cv2.imwrite("sailor_moon_train/%d.jpg" % count, image)
+     cv2.imwrite("dataset/spirit_train/%d.jpg" % count, image)
      success,image = vidcap.read()
      count += 1
 
-parseFramesFromVid('sailor_moon.mp4')
+parseFramesFromVid('456835922.mp4')

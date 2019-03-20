@@ -2,10 +2,11 @@ import os
 import cv2
 import random
 
-def cropDataFromPath(count, path, newpath):
+def cropDataFromPath(path, newpath):
   for (_, _, fnames) in os.walk(path):
     random.shuffle(fnames)
-    for fname in fnames[:count]:
+    count = 0
+    for fname in fnames:
       fpath = path + "/" + fname
       newfpath = newpath + "/" + fname
       im = cv2.imread(fpath)
@@ -20,5 +21,6 @@ def cropDataFromPath(count, path, newpath):
         crop_index = int(im.shape[0]/2 - 256/2) # crop index so height is 256
         im = im[crop_index:crop_index+256, :] # crop
       cv2.imwrite(newfpath, im)
+      count +=1
 
-cropDataFromPath(6000, 'flickr_train', 'flickr_train256x256')
+cropDataFromPath('dataset/spirit_train', 'dataset/spirit_train256x256')
