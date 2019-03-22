@@ -1,6 +1,13 @@
 # 202-project3
-Collaborators: Asiiah, Hadiseh, Ishaan, Jawad
+Collaborators: Jawad E, Hadiseh G, Ishaan P, Asiiah S
 
-How to run:
+## How to run:
+1. Download the pretrained Twin-GAN model `256` from [this google drive link](https://drive.google.com/drive/folders/1EJ9JPV2b3qItspApJuMHgR8OQBK55xFV?usp=sharing) and put it at `202-project3/256`.
+
+2. Create folders `sample_input` and `sample_output` in the root directory `202-project3`.
+
+3. Put the images you wish to convert into `sample_input`. JPEG format recommended; no promises with other formats.
+
+2. Run `runall.sh` in the root directory `202-project3`.
 
 
