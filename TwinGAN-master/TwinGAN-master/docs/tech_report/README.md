@@ -1,1 +1,0 @@
-Please refer to [Arxiv](https://arxiv.org/abs/1809.00946). The report here is an older version and is kept only for record.

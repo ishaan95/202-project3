@@ -1,2 +1,0 @@
-model_checkpoint_path: "/mnt/E076DD8F76DD66B6/image2tag_checkpoints/pggan_face_sc_train_both_no_style_embed_distill_lambda_10/256/model.ckpt-100000"
-all_model_checkpoint_paths: "/mnt/E076DD8F76DD66B6/image2tag_checkpoints/pggan_face_sc_train_both_no_style_embed_distill_lambda_10/256/model.ckpt-100000"
