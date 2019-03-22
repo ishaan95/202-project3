@@ -12,4 +12,10 @@ Collaborators: Jawad E, Hadiseh G, Ishaan P, Asiiah S
 
 5. Outputs will be in `sample_output`.
 
+## Video:
+[A screencapture video of the process from start to finish.]()
+
+## Report:
+[Real World Scene To Anime Scene Translation](./report.pdf)
+
 
