@@ -8,6 +8,8 @@ Collaborators: Jawad E, Hadiseh G, Ishaan P, Asiiah S
 
 3. Put the images you wish to convert into `sample_input`. JPEG format recommended; no promises with other formats.
 
-2. Run `runall.sh` in the root directory `202-project3`.
+4. Run `runall.sh` in the root directory `202-project3`.
+
+5. Outputs will be in `sample_output`.
 
 
