@@ -17,7 +17,7 @@ class human_face_detector:
 		
 
 
-	def replace_main_image(self):
+	def replace_main_image(self, folder_path, output):
 		cv.imshow("mainImage", self.input_image)
 		cv.waitKey(0)
 		for i in range(len(self.faces)):
@@ -25,9 +25,9 @@ class human_face_detector:
 			y = self.faces[i].y
 			h = self.faces[i].face.shape[0]
 			w = self.faces[i].face.shape[1]
-			print(" H/ W ",h, w)
+			# print(" H/ W ",h, w)
 			temp_img = cv.resize(self.faces[i].face, (h, w))
-			print(temp_img.shape[0], temp_img.shape[1])
+			# print(temp_img.shape[0], temp_img.shape[1])
 			
 			# print(" Shape temp " ,temp_img.shape)
 			# self.input_image[y: y+h, x:x+w] = temp_img[0:h, 0:w]
@@ -35,8 +35,10 @@ class human_face_detector:
 			# cv.waitKey(0)
 			# cv.imshow("main image", self.input_image[y: y+h, x:x+w])
 			# cv.waitKey(0)
-		# cv.imshow("mainImage", self.input_image)
-		# cv.waitKey(0)
+			cv.imwrite(folder_path + output, self.input_image)
+			k = cv.waitKey(30) & 0xff
+			if k == 27:
+				break
 
 	def rect_to_bb(self, rect):
 	    padding_h = int((rect.bottom() - rect.top()) * padding_threshold_h)

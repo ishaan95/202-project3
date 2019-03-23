@@ -78,7 +78,7 @@ class anime_face_crop:
 		# after_mask_surr = cv.bitwise_and(human, human, mask = mask_image)
 		# after_mask = after_mask_surr  + after_mask_main
 		# cv.imshow("Transparent", human)
-		self.show_image("composite", human)
+		# self.show_image("composite", human)
 		return human
 
 
